@@ -1,5 +1,5 @@
 # nginx-meteor
-Docker image running nginx and meteor with embedded version of nodejs.
+Docker image running nginx and meteor with embedded version of nodejs. Available on [DockerHub](https://registry.hub.docker.com/u/shangbang/nginx-meteor/)
 
 Use of embedded nodejs from meteor was taken from [grigio/docker-meteor](https://github.com/grigio/docker-meteor).
 

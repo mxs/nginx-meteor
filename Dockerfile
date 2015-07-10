@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		supervisor \
 		&& rm -rf /var/lib/apt/lists/*
 
-ENV PORT 3000
 ENV METEOR_RELEASE 1.1.0.2
 
 RUN curl  https://install.meteor.com/ 2>/dev/null | sed 's/^RELEASE/#RELEASE/'| RELEASE=$METEOR_RELEASE sh
@@ -18,3 +17,5 @@ RUN curl  https://install.meteor.com/ 2>/dev/null | sed 's/^RELEASE/#RELEASE/'| 
 RUN ln -s ~/.meteor/packages/meteor-tool/*/mt-os.linux.x86_64/dev_bundle/bin/node /usr/bin/ && \
 		ln -s ~/.meteor/packages/meteor-tool/*/mt-os.linux.x86_64/dev_bundle/bin/npm /usr/bin/ && \
 		rm /etc/nginx/conf.d/default.conf
+
+ENV PORT 3000
