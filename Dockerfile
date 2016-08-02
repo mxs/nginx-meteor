@@ -3,6 +3,7 @@ FROM nginx:1.9.12
 MAINTAINER Michael Shang
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+		build-essential \
 		ca-certificates \
 		curl \
 		git \
