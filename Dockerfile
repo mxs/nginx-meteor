@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		supervisor \
 		&& rm -rf /var/lib/apt/lists/*
 
-ENV METEOR_RELEASE 1.4.1.1
+ENV METEOR_RELEASE 1.4.1.2
 
 RUN curl  https://install.meteor.com/ 2>/dev/null | sed 's/^RELEASE/#RELEASE/'| RELEASE=$METEOR_RELEASE sh
 
